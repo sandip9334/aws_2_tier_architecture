@@ -11,7 +11,7 @@ sudo usermod -aG docker ubuntu
 
 sudo apt install -y git
 
-git clone https://github.com/naveend3v/Python-MySQL-application.git /home/ubuntu/app
+git clone https://github.com/sandip9334/app_python_mysql.git /home/ubuntu/app
 
 # Retrieve database password from AWS Systems Manager Parameter Store
 mysql_password=$(aws ssm get-parameter --name mysql_psw --query "Parameter.Value" --output text --with-decryption)
